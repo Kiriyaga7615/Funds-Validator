@@ -30,7 +30,7 @@ public class Main {
             try {
                 throw new FundsException("Insufficient funds!");
             } catch (FundsException e) {
-                System.out.println("Insufficient funds!");
+                System.out.println(e.getMessage());
             }
         } else {
             balance = getBalance(balance, withdrawal);
